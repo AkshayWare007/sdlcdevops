@@ -10,14 +10,14 @@ import java.util.List;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-class EmailTest {
+public class EmailTest {
 
     private static Email email;
 
     @BeforeClass
     public static void createEmailObjectForTest() {
         String emailId = "akshay.ware@gmail.com";
-        String emailSubject = "Testing Email Client";
+        String emailSubject = "Testing/ Email Client";
         String emailBody = "dfvbdgfvdhfugf/";
         List<Character> emailAttachment = Arrays.asList('A', 'B');
 
@@ -60,7 +60,7 @@ class EmailTest {
         assertTrue(email.getEmailAttachment().size() <= 100);
     }
 
-    @Test(timeout = 1000)
+    @Test(timeout = 3500)
     public void testSendMailMethod() {
         email.sendMail();
     }
