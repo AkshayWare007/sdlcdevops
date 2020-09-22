@@ -17,7 +17,7 @@ public class EmailTest {
     @BeforeClass
     public static void createEmailObjectForTest() {
         String emailId = "akshay.ware@gmail.com";
-        String emailSubject = "Testing/ Email Client";
+        String emailSubject = "Testing/ Email Client";// Trying to extend length greater than 30";
         String emailBody = "dfvbdgfvdhfugf/";
         List<Character> emailAttachment = Arrays.asList('A', 'B');
 
